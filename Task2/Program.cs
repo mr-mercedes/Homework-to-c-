@@ -6,31 +6,6 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число: ");
 int number3 = Convert.ToInt32(Console.ReadLine());
 int max = number1;
-if (max > number2)
-    {
-        if (max > number3)
-            {
-                Console.WriteLine("Наибольшее число из введенных: " + max);
-            }
-        else
-            {
-                Console.WriteLine("Наибольшее число из введенных: " + number3);
-
-            }
-
-            
-
-    }
-else
-    {
-        number2 = max;
-        if (max > number3)
-            {
-                Console.WriteLine("Наибольшее число из введенных: " + max);
-            }
-        else
-            {
-                Console.WriteLine("Наибольшее число из введенных: " + number3);
-            }
-    }
-
+if (number2 > max) max = number2;
+if (number3 > max) max = number3;
+Console.WriteLine(max);
