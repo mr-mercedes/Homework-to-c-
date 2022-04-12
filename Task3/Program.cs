@@ -1,11 +1,11 @@
 ﻿Console.WriteLine("Задача №3:На ввод число, программа должна определить четное оно или нет: ");
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if (Convert.ToBoolean(number %= 2)) 
+if (number %2 ==0)
     {
-        Console.WriteLine("Число не четное!");
+        Console.WriteLine("Число четное!");
     }
 else
     {
-        Console.WriteLine("Число четное!");
+        Console.WriteLine("Число не четное!");
     }
