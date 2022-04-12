@@ -1,10 +1,9 @@
 ﻿Console.WriteLine("Задача №4:На ввод число, программа должна вывести все четные числа от 1 до введенного: ");
 Console.WriteLine("Введите число: ");
-int number = Console.ReadLine();
-int index = 0;
-while (index >= number)
+int number = Convert.ToInt32(Console.ReadLine());
+int index = 2;
+while (index <= number)
     {
-        
-        index++;
+        Console.Write(index + " ");
+        index = index + 2;
     }
-Console.WriteLine();
